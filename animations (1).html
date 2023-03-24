@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+
+            height: 100vh;
+            width: 100vw;
+            background-color: yellow;
+            position: fixed;
+        }
+
+        .box{
+
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            animation: anim1 5s;
+            /* animation-delay: 2s; */
+            animation-iteration-count: infinite;
+        }
+
+       
+        @keyframes anim1{
+
+           0%{
+
+                margin-left: 0;
+                margin-top: 0;
+                background-color: red;
+           }
+
+           25%{
+
+                margin-left: 40rem;
+                margin-top: 0;
+                background-color: cyan;
+                color: black;
+                rotate: 100deg;
+           }
+
+           50%{
+
+                margin-left: 40rem;
+                margin-top: 30rem;
+                background-color: tomato;
+                color: black;
+                rotate: 200deg;
+           }
+
+           75%{
+
+                margin-left: 0;
+                margin-top: 30rem;
+                background-color: springgreen;
+                rotate: 300deg;
+           }
+
+           100%{
+
+
+                margin-left: 0;
+                margin-top: 0;
+                background-color: red;
+                rotate: 360deg;
+           }
+
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    
+
+    <div class="main">
+
+       <div class="box">box</div>
+
+    </div>
+
+
+
+</body>
+</html>
